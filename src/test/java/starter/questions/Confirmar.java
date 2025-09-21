@@ -5,9 +5,9 @@ import net.serenitybdd.screenplay.questions.Text;
 import starter.ui.CartPage;
 
 public class Confirmar {
-    public static Question<Boolean> confirmarCompra() {
+    public static Question<Boolean> confirmarCompra(String mensaje) {
         return actor -> Text.of(CartPage.MENSAJE_CONFIRMACION)
                 .answeredBy(actor)
-                .equals("Thank you for your purchase!");
+                .equals(mensaje);
     }
 }

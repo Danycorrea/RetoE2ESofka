@@ -50,8 +50,8 @@ public class RealizarCompraStepDefinition {
        OnStage.theActorInTheSpotlight().attemptsTo(CompletarFormulario.deCompra(compra));
     }
 
-    @Entonces("debería ver el mensaje 'Thank you for your purchase!'")
-    public void verificarMensaje() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Confirmar.confirmarCompra()));
+    @Entonces("debería ver el mensaje {string}")
+    public void verificarMensaje(String mensaje) {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Confirmar.confirmarCompra(mensaje)));
     }
 }
