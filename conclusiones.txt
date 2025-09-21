@@ -1,0 +1,20 @@
+CONCLUSIONES DEL EJERCICIO DE AUTOMATIZACIÓN E2E DEMOBLAZE
+
+RESULTADOS DE LA EJECUCIÓN
+- Se completó exitosamente el flujo de compra E2E sin errores funcionales
+- Se validó correctamente el mensaje de confirmación "Thank you for your purchase!"
+- Los elementos web fueron localizados correctamente mediante los selectores definidos
+
+MANEJO DE INTERACCIONES ESPECÍFICAS
+1. Alerta JavaScript
+   - Se identificó una alerta JavaScript al agregar productos al carrito
+   - Se implementó la clase AceptarAlerta para manejar esta interacción
+   - Se configuró un tiempo de espera explícito de 5 segundos para la alerta
+   - La solución implementada utiliza WebDriverWait para espera dinámica
+
+2. Datos de Prueba
+   - Se utilizaron datos predefinidos para el formulario de compra
+   - Los datos se pasan mediante DataTable de Cucumber
+   - La estructura permite fácil modificación de datos de prueba
+
+
